@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(234, 252, 253);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+h1 {
+    font: arial;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+article {
+    display: ;
+    border: 4px black dotted;
+    margin: 2em;
+    padding: 1em;
+    display: center;
+}
+
+p {
+    font-family: arial;
+    font-size: 15px;
+}
+
+img {
+    width: 17%;
+    height: auto;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgb(157, 163, 241);
+  }
+
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
