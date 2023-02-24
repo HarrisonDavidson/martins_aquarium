@@ -4,7 +4,7 @@ const database = {
             name: "Gary",
             species: "Spotted Clownfish",
             food: "crustaceans",
-            harvest: "Carribean",
+            harvest: "Caribbean",
             size: 3
 },
         {
@@ -22,7 +22,7 @@ const database = {
             size: 1
 },
         {
-            name: "Percieval Frederickstein von Mussel Kowalksi diRollo III",
+            name: "Percy",
             species: "Pancake Grouch",
             food: "hatred, spite",
             harvest: "Tal'Dorei",
@@ -30,9 +30,6 @@ const database = {
 }
     ]
 }
-
-
-
 
 export const getFish = () => {
     return database.fish.map(copyOfSingleFishObject => ({...copyOfSingleFishObject}))
