@@ -5,7 +5,8 @@ const database = {
             species: "Spotted Clownfish",
             food: "crustaceans",
             harvest: "Caribbean",
-            size: 3
+            size: 3,
+            image: 'https://i.ibb.co/5LKqHD8/fish3.png'
 },
         {
             name: "Sherry",
@@ -13,20 +14,23 @@ const database = {
             food: "seaweed",
             harvest: "Atlantic",
             size: 4,
+            image: 'https://i.ibb.co/n11B9K1/fish5.jpg'
 },
         {
             name: "Chester",
             species: "Zebra Puffer",
             food: "plankton",
             harvest: "Lake Imogen",
-            size: 1
+            size: 1,
+            image: 'https://i.ibb.co/cLXV1x9/fish.jpg'
 },
         {
             name: "Percy",
             species: "Pancake Grouch",
-            food: "hatred, spite",
+            food: "hatred and spite",
             harvest: "Tal'Dorei",
-            size: 5
+            size: 5,
+            image: 'https://i.ibb.co/gdqmB28/fish4.jpg'
 }
     ]
 }

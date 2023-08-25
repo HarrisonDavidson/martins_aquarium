@@ -1,43 +1,26 @@
 // Import the function that returns a copy of the fish array
-import {} from ''
+import {getFish} from './database.js'
 
-export const FishList = () => {
+export let FishList = () => {
     // Invoke the function that you imported from the database module
-    const fishes = invokeTheRightFunctionHere()
+    let fishes = getFish()
 
     // Start building a string filled with HTML syntax
-    const htmlString = '<article class="fishList">'
+    let htmlString = '<article class="fishList">'
 
-    // Create HTNL representations of each fish here
-    for (const singleFish of fishes) {
+    // Create HTML representations of each fish here
+    for (let singleFish of fishes) {
 
         // Why is there a backtick used for this string?
         htmlString += `<section class="fish card">
-            <div><img  class="fish__image image--card" src="${singleFish.image}" /></div>
-            <div class="fish__name">${singleFish.name}</div>
-            <div class="fish__species">${singleFish.species}</div>
-            <div class="fish__length">${singleFish.length}</div>
-            <div class="fish__location">${singleFish.location}</div>
-            <div class="fish__diet">${singleFish.food}</div>
+            <div class="harvested-fish">
+            <img src="${singleFish.image}" class="fish-images float-left" alt="${singleFish.altText}" />
+            <span class="li-fish-name">${singleFish.name}</span> &nbsp; | &nbsp;</span><span class="li-fish-location">${singleFish.location}.</span>
+            <p class="no-margin">This ${singleFish.name} was harvested in the waters of ${singleFish.location}. It is of the family "${singleFish.family}", and is on average ${singleFish.size} inches in length. I have found that the best diet for the ${singleFish.name} is ${singleFish.food}.</p></div>
         </section>
 `
     }
+    htmlString += `</article>`
 
     return htmlString
 }
-
-
-// Import the FishList function from the correct module
-import {} from ''
-
-/*
-    What is the CSS selector for the element where you
-    want to display the fish?
-
-    Use . for elements with a "class" attribute
-    Use # for elements with an "id" attribute
- */
-const parentHTMLElement = document.querySelector("insert selector here")
-
-
-parentHTMLElement.innerHTML = FishList()
